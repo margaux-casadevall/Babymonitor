@@ -66,6 +66,10 @@
             </span>
             <span class="text11"><span>mmol</span></span>
         </div>
+        <form id="glucose-form" action="/" method="post">
+            <input type="text" name="Glucose level" id="glucose-field" class="glucose-form-field" placeholder="Glucose level">
+            <input type="submit" value="Login" id="login-form-submit">
+        </form>
         <div class="time">
             <span class="text13">
             <span>Default time</span>
@@ -78,15 +82,17 @@
     </main>
     <main id="main-holder-2">
         <div class="comment-time">
-            <span class="text29">
-            <span>Default time</span>
-            </span>
+            <form id="time-form" action="/" method="post">
+                <input type="text" name="Default time" id="time-field" class="time-form-field" placeholder="Default time">
+            </form>
         </div>
+
         <div class="comment">
-            <span class="text23">
-            <span>Comment</span>
-            </span>
+            <form id="comment-form" action="/" method="post">
+                <input type="text" name="Comment" id="comment-field" class="comment-form-field" placeholder="Comment">
+            </form>
         </div>
+
         <button class="savecomment">
             <span class="text27"><span>Save</span></span>
         </button>

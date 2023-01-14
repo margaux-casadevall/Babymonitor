@@ -293,6 +293,25 @@ html {
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 1);
   }
+ .comment{
+   top: 25%;
+   left: 3%;
+   color: rgba(0, 0, 0, 0.4000000059604645);
+   width: 393px;
+   height: auto;
+   position: absolute;
+   font-size: 24px;
+   align-self: auto;
+   font-style: Medium;
+   text-align: left;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 500;
+   line-height: normal;
+   font-stretch: normal;
+   margin-right: 0;
+   margin-bottom: 0;
+   text-decoration: none;
+ }
   .text29 {
     top: 25%;
     left: 3%;
