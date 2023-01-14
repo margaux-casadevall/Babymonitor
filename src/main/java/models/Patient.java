@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Patient {
-    //Setting the patient's arguments
     @BsonProperty("id")
     private String id;
     private String hospital;
@@ -15,7 +14,10 @@ public class Patient {
     private ArrayList<GlucoseLevel> glucoseLevels;
     private ArrayList<Comment> comments;
 
-    public Patient() {}
+    public Patient() {
+        this.glucoseLevels = new ArrayList<>();
+        this.comments = new ArrayList<>();
+    }
 
     public String getId() {
         return id;
@@ -55,5 +57,13 @@ public class Patient {
 
     public ArrayList<Comment> getComments() {
         return comments;
+    }
+
+    public void setGlucoseLevels(ArrayList<GlucoseLevel> glucoseLevels) {
+        this.glucoseLevels = glucoseLevels;
+    }
+
+    public void setComments(ArrayList<Comment> comments) {
+        this.comments = comments;
     }
 }
