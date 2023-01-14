@@ -67,21 +67,6 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lucas\Downloads\Babymonitor\src\main\webapp\js" />
-      <recent name="C:\Users\lucas\Downloads\Babymonitor\src\main\webapp\images" />
-      <recent name="C:\Users\lucas\Downloads\Babymonitor\src\main\webapp\css" />
-      <recent name="C:\Users\lucas\Downloads\Babymonitor\src\main\webapp" />
-      <recent name="C:\Users\lucas\Downloads\Babymonitor" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="servlets" />
-      <recent name="models" />
-      <recent name="services" />
-      <recent name="comparators" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="WebApp [clean,package,exec:exec]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
