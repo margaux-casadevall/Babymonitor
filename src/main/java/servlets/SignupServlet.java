@@ -22,10 +22,10 @@ public class SignupServlet extends HttpServlet
     var password = request.getParameter("password");
     var role = request.getParameter("role");
 
-    var user = new User(username, Helpers.sha256(password), role);
+    var user = new User(username, Helpers.sha256(password), role);    // Hashing password
 
     UserService.Instance.create(user);
 
-    response.setStatus(202);
+    response.setStatus(202);    // Request accepted
   }
 }

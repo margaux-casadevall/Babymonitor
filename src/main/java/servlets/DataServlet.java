@@ -33,7 +33,7 @@ public class DataServlet extends HttpServlet
     var patient = PatientService.Instance.get(patientId);
 
     if(patient == null) {
-      response.setStatus(404);
+      response.setStatus(404);    // Error not found
       return;
     }
 

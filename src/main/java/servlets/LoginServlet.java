@@ -39,6 +39,7 @@ public class LoginServlet extends HttpServlet
       RequestDispatcher dispatch = context.getRequestDispatcher("/login.jsp");
       dispatch.forward(request, response);
     } else {
+      // valid login- to patient directory
       request.getSession().setAttribute("user", user);
       response.sendRedirect(Helpers.redirectUrl(request, "/patients"));
     }
