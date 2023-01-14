@@ -61,10 +61,10 @@ public class AddDataServlet extends HttpServlet
 
     var patient = PatientService.Instance.get(id);
 
-    if(type == "glucose") {
+    if(type.equals("glucose")) {
       patient.getGlucoseLevels().add(new GlucoseLevel(new Date(), Double.parseDouble(value)));
     }
-    else if(type == "comment") {
+    else if(type.equals("comment")) {
       patient.getComments().add(new Comment(new Date(), value));
     }
 
