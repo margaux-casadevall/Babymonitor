@@ -18,6 +18,6 @@ public class LogoutServlet extends HttpServlet
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException
   {
     request.getSession().removeAttribute("user");
-    response.sendRedirect(Helpers.redirectUrl(request, "/login"));
+    response.sendRedirect(Helpers.redirectUrl(request, "/login")); //Back to login with previous user removed
   }
 }
