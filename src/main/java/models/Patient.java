@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Patient {
+    //Setting the patient's arguments
     @BsonProperty("id")
     private String id;
     private String hospital;
