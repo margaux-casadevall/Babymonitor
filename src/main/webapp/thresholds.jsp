@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/thresholds.css">
+  <link rel="stylesheet" href="../css/thresholds.css">
   <style>
     button{
       border: none;
@@ -42,7 +42,7 @@
         <h2>Baby Monitor</h2>
     </div>
     <div class="header">
-        <form action="index.html">
+        <form action="/logout">
             <button type="submit">
                 <img src="../images/exit.png" alt="LogOut"/>
               </button>
@@ -53,7 +53,7 @@
     <span class="text07">
         <span><%=patient.getHospital()%></span>
     </span>
-    <form action="page1.html">
+    <form action="/">
         <button type="submit" class="home-btn">
             <img src="../images/house.jpg" alt="Home"/>
         </button>

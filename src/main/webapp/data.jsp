@@ -10,7 +10,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../css/data.css">
-  <style>
+    <script defer src="js/data.js"></script>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
     button{
       border: none;
       cursor: pointer;
@@ -42,7 +49,7 @@
         <h2>Baby Monitor</h2>
     </div>
     <div class="header">
-      <form action="index.html">
+      <form action="/logout">
           <button type="submit">
               <img src="../images/exit.png" alt="LogOut"/>
             </button>
@@ -59,10 +66,55 @@
       </button>
   </form>
   </div>
-    <main id="main-holder"></main>
-  <form action="page5.html">
-    <button class="edit-thresh">
-        <span class="text19"><span>Edit threshold</span></span>
-    </button>
-  </form>
+      <canvas id="myGraph" style="width:100%;max-width:700px">
+          <script>
+              var xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+              new Chart("myGraph", {
+                  type: "line",
+                  data: {
+                      labels: xValues,
+                      datasets: [{
+                          data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+                          label: 'A',
+                          yAxisID: 'A',
+                          borderColor: "red",
+                          fill: false
+                      }, {
+                          data: [3,7,20,50,60,40,20,10,2,1],
+                          label: 'B',
+                          yAxisID: 'B',
+                          borderColor: "blue",
+                          fill: false
+                      }]
+                  },
+                  options: {
+                      legend: {display: false}
+                  },
+                  options: {
+                      scales: {
+                          yAxes: [{
+                              id: 'A',
+                              type: 'linear',
+                              position: 'left',
+                          }, {
+                              id: 'B',
+                              type: 'linear',
+                              position: 'right',
+                              ticks: {
+                                  max: 100,
+                                  min: 0
+                              }
+                          }]
+                      }
+                  }
+              });
+          </script>
+      </canvas>
+      <form action="/patient/thresholds">
+          <input name="id" value="<%=patient.getId()%>" type="hidden"/>
+          <button class="edit-thresh">
+              <span class="text19"><span>Edit threshold</span></span>
+          </button>
+      </form>
 </body>
