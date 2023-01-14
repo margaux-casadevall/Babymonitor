@@ -42,7 +42,7 @@
         <h2>Baby Monitor</h2>
     </div>
     <div class="header">
-        <form action="index.html">
+        <form action="/logout">
             <button type="submit">
                 <img src="../images/exit.png" alt="LogOut"/>
               </button>
