@@ -2,6 +2,7 @@ package models;
 
 import java.util.Date;
 
+//Doctors or nurses add comments
 public class Comment {
     private Date timestamp;
     private String value;

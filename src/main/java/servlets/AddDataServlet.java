@@ -28,7 +28,8 @@ public class AddDataServlet extends HttpServlet
     }
 
     var patientId = request.getParameter("id");
-
+    
+//Error not found envoked
     if(patientId == null) {
       response.setStatus(404);
       return;
