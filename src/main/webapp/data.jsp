@@ -1,9 +1,11 @@
 <%@ page import="models.Patient" %>
 <%@ page import="models.GlucoseLevel" %>
 <%@ page import="models.Comment" %>
+<%@ page import="models.User" %>
 <%@ page import="org.json.JSONObject" %>
 <%
     Patient patient = (Patient)request.getAttribute("patient");
+    User user = (User)request.getSession().getAttribute("user");
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -194,10 +196,17 @@
             %>
         </div>
     </div>
+   <%
+    if(user.getRole().equals("Doctor")) {
+    %>
     <form action="/patient/thresholds">
         <input name="id" value="<%=patient.getId()%>" type="hidden"/>
         <button class="edit-thresh">
             <span class="text19"><span>Edit threshold</span></span>
         </button>
     </form>
+    %>
+    <%
+    }
+    %>
 </body>

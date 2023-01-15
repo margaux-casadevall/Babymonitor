@@ -2,6 +2,7 @@ package servlets;
 
 import com.mongodb.client.MongoCollection;
 import helpers.Helpers;
+import models.User;
 import services.PatientService;
 
 import javax.servlet.RequestDispatcher;
@@ -20,8 +21,13 @@ public class ThresholdServlet extends HttpServlet
 {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
   {
-    if(request.getSession().getAttribute("user") == null) {
+    User user = (User)request.getSession().getAttribute("user");
+    
+    if(user == null) {
       response.sendRedirect("/login");
+      return;
+    } else if(user.getRole() != "Doctor") {
+      response.setStatus(403);
       return;
     }
 
