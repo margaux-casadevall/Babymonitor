@@ -17,5 +17,5 @@ Our proyect uses Tomcat which provides a web server environment in which Java co
 To launch the webApp, select the Main class and click run, after this, type "localhost:8080" into your web server, this will lead to the login page.
 
 Our database, created using mongodb, contains sample data on the user's information, for example the usernames, passwords and roles. The passwords have been hashed for 
-security.To enter the Babymonitoring App, enter "admin" as a username and again "admin" as the password. This sample user has the role "doctor" and hence will be able to access
-all components of the app, nurses will not be able to change the threshold 
+security.To enter the Babymonitoring App, enter "doctor" as a username and "admin" as the password for the user to be a doctor and "nurse as a username and again "admin"
+as the password to access the webApp as a nurse. Doctors will be able to access all components of the app however, nurses will not be able to change the glucose thresholds.
