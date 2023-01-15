@@ -21,9 +21,17 @@ public class IndexServlet extends HttpServlet
     HttpSession session = request.getSession();
 
     if(session.getAttribute("user") == null) {
-      response.sendRedirect(Helpers.redirectUrl(request, "/login"));
+      response.sendRedirect("/login");
     } else {
-      response.sendRedirect(Helpers.redirectUrl(request, "/patients"));
+      response.sendRedirect("/patients");
     }
+  }
+  protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    var LowerThresh = request.getParameter("Lower threshold (4.5)");
+    var UpperThresh = request.getParameter("Upper threshold (14)");
+
+
+    response.getWriter().write(UpperThresh + LowerThresh);
   }
 }

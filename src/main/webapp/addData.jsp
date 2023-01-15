@@ -51,7 +51,7 @@
         <span>Patient ID: <%=patient.getId()%></span>
     </span>
     <span class="text07">
-        <span>St Mary&apos;s</span>
+        <span><%=patient.getHospital()%></span>
     </span>
     <form action="/">
         <button type="submit" class="home-btn">
@@ -60,69 +60,17 @@
     </form>
     </div>
     <main id="main-holder-1">
-        <div class="glucose">
-            <form id="glucose-form" action="/" method="post">
-                <input type="text" name="Glucose level" id="glucose-field" class="glucose-form-field" placeholder="Glucose level">
-                <br>
-                <input type="text" id="time-field" name="Time" placeholder="Time">
-                <br>
-                <button type="submit">Save</button>
-            </form>
-        </div>
-        <script>
-            const form = document.getElementById("glucose-form");
+        <span class="text21"><span>NEW MEASUREMENT AND COMMENT</span></span>
 
-            form.addEventListener("submit",(e) => {
-                e.preventDefault();//in order to prevent page request
 
-                const gluc = document.getElementById("glucose-field").value;
-                const timeg = document.getElementById("time_field").value;
-
-                //Crete an object with the inputs
-                const glucdata = {
-                    input1: gluc,
-                    input2: timeg
-                };
-                //Send a POST request to the backend with the inputs as the request body
-                fetch("http://localhost:8080/submit", {
-                    method: "POST",
-                    body: JSON.stringify(data),
-                    headers: {
-                        "Content-Type": "application/json"
-                    }
-                }).catch(error =>{
-                    console.log(error);
-                });
-            });
-        </script>
-        <div class="time">
-            <form id="time-form" action="/" method="post">
-                <input type="text" name="Time" id="time-field" class="time-form-field" placeholder="Time">
-            </form>
-        </div>
-
-        <button class="save">
-            <span class="text17"><span>Save</span></span>
-        </button>
-        <span class="text21"><span>NEW MEASUREMENT</span></span>
-    </main>
-
-    <main id="main-holder-2">
-        <div class="comment-time">
-            <form id="time2-form" action="/" method="post">
-                <input type="text" name="Default time" id="time2-field" class="time-form-field" placeholder="Default time">
-            </form>
-        </div>
-
-        <div class="comment">
-            <form id="comment-form" action="/" method="post">
-                <input type="text" name="Comment" id="comment-field" class="comment-form-field" placeholder="Comment">
-            </form>
-        </div>
-
-        <button class="savecomment">
-            <span class="text27"><span>Save</span></span>
-        </button>
-        <span class="text31"><span>NEW COMMENT</span></span>
+        <form id="form" action="/patient/add?id=<%=patient.getId()%>" method="post">
+            <input name="measurement" id="username-field" class="measurement-form-field" placeholder="Measurement (mmol)">
+            <input name="comment" id="comment-field" class="comment-form-field" placeholder="Comment">
+            <input type="time" name="time" class="measurement-form-field" style="top: 80%" required>       
+            <button class="save" type="submit">
+                <span class="text17"><span>Save</span></span>
+            </button> 
+        </form>
+        <span class="text11"><span>mmol</span></span>
     </main>
 </body>

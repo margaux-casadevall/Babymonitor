@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
 import java.io.IOException;
 
 @WebServlet("/patient/data")
@@ -19,7 +20,7 @@ public class DataServlet extends HttpServlet
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
   {
     if(request.getSession().getAttribute("user") == null) {
-      response.sendRedirect(Helpers.redirectUrl(request, "/login"));
+      response.sendRedirect("/login");
       return;
     }
 

@@ -12,10 +12,12 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+
+import org.json.JSONObject;
+
 import java.io.IOException;
-import java.time.LocalDateTime;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 @WebServlet("/patient/add")
 public class AddDataServlet extends HttpServlet
@@ -23,13 +25,13 @@ public class AddDataServlet extends HttpServlet
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
   {
     if(request.getSession().getAttribute("user") == null) {
-      response.sendRedirect(Helpers.redirectUrl(request, "/login"));
+      response.sendRedirect("/login");
       return;
     }
 
     var patientId = request.getParameter("id");
     
-//Error not found envoked
+  //Error not found envoked
     if(patientId == null) {
       response.setStatus(404);
       return;
@@ -52,26 +54,30 @@ public class AddDataServlet extends HttpServlet
 
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
     if(request.getSession().getAttribute("user") == null) {
-      response.sendRedirect(Helpers.redirectUrl(request, "/login"));
+      response.sendRedirect("/login");
       return;
     }
 
     var id = request.getParameter("id");
-    var type = request.getParameter("type");
-    var value = request.getParameter("value");
+
+    var measurement = request.getParameter("measurement");
+    var comment = request.getParameter("comment");
+    var time = request.getParameter("time");
+
+    var date = java.sql.Timestamp.valueOf(LocalDate.now().atTime(LocalTime.parse(time)));
 
     var patient = PatientService.Instance.get(id);
 
-    if(type.equals("glucose")) {
-      patient.getGlucoseLevels().add(new GlucoseLevel(new Date(), Double.parseDouble(value)));
+    if(measurement != "") {
+      patient.getGlucoseLevels().add(new GlucoseLevel(date, Double.parseDouble(measurement)));
     }
-    else if(type.equals("comment")) {
-      patient.getComments().add(new Comment(new Date(), value));
+    
+    if(comment != "") {
+      patient.getComments().add(new Comment(date, comment));
     }
 
     PatientService.Instance.replace(id, patient);
 
-    response.sendRedirect(Helpers.redirectUrl(request, "/patient/data?id=" + id));
-
+    response.sendRedirect("/patient/data?id=" + id);
   }
 }

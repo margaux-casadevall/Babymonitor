@@ -20,7 +20,7 @@ public class PatientsServlet extends HttpServlet
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
   {
     if(request.getSession().getAttribute("user") == null) {
-      response.sendRedirect(Helpers.redirectUrl(request, "/login"));
+      response.sendRedirect("/login");
       return;
     }
 
