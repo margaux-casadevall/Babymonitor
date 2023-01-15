@@ -12,12 +12,14 @@ public class Patient {
     private Date dateAdmitted;
     private String doctor;
     private ArrayList<GlucoseLevel> glucoseLevels;
+    private ArrayList<GlucoseLevel> glucoseLevelsHP;
     private ArrayList<Comment> comments;
     private double lowerThreshold;
     private double upperThreshold;
 
     public Patient() {
         this.glucoseLevels = new ArrayList<>();
+        this.glucoseLevelsHP = new ArrayList<>();
         this.comments = new ArrayList<>();
     }
 
@@ -61,6 +63,12 @@ public class Patient {
 
     public void setGlucoseLevels(ArrayList<GlucoseLevel> glucoseLevels) {
         this.glucoseLevels = glucoseLevels;
+    }
+
+    public ArrayList<GlucoseLevel> getGlucoseLevelsHP() {return glucoseLevelsHP;}
+
+    public void setGlucoseLevelsHP(ArrayList<GlucoseLevel> glucoseLevels) {
+        this.glucoseLevelsHP = glucoseLevels;
     }
 
     public void setComments(ArrayList<Comment> comments) {

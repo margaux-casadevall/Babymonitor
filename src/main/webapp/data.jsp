@@ -1,6 +1,7 @@
 <%@ page import="models.Patient" %>
 <%@ page import="models.GlucoseLevel" %>
 <%@ page import="models.Comment" %>
+<%@ page import="org.json.JSONObject" %>
 <%
     Patient patient = (Patient)request.getAttribute("patient");
 %>
@@ -18,7 +19,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     <style>
         button{
             border: none;
@@ -70,6 +70,12 @@
     </div>
     <canvas id="myGraph" style="width: 35%; height: auto;">
         <script>
+           let glucoseLevels = <%=JSONObject.valueToString(patient.getGlucoseLevels())%>
+           let glucoseLevelsHP = <%=JSONObject.valueToString(patient.getGlucoseLevelsHP())%>
+           let comments = <%=JSONObject.valueToString(patient.getComments())%>
+           let upperThreshold = <%=patient.getUpperThreshold()%>
+           let lowerThreshold = <%=patient.getLowerThreshold()%>
+
            /* new Chart("MyGraph", {
                 type: 'line',
                 data: {
@@ -131,7 +137,7 @@
                         fill: false
                         }*/
                         {
-                        data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+                        data: glucoseLevels,
                         label: 'A',
                         yAxisID: 'A',
                         borderColor: "green",
