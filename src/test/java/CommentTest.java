@@ -8,7 +8,7 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.util.Date;
 
-public class TestComment {
+public class CommentTest {
 
     Comment com;
 

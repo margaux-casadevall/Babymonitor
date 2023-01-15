@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
-public class TestPatient {
+public class PatientTest {
     Patient pat;
     String doctor1 = "Dr Charls";
     String id1 = String.valueOf(Long.valueOf("2358801"));

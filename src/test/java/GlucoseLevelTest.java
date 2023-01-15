@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.time.Instant;
 import java.util.Date;
 
-public class TestGlucoseLevel {
+public class GlucoseLevelTest {
     GlucoseLevel glu;
     Date timestamp1 = Date.from(Instant.parse("2023-01-01T12:00:00.000Z"));
     Double value1 = Double.valueOf("4");

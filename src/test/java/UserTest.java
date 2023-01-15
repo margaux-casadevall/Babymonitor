@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class TestUser {
+public class UserTest {
     User user;
         String username1 =  "robertkent";
         String password1 = "robert22";
