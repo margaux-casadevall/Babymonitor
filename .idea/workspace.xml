@@ -7,12 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a232a4-afd9-4adc-938b-66ffccf9ecd0" name="Changes" comment="model tests passed">
+    <list default="true" id="e7a232a4-afd9-4adc-938b-66ffccf9ecd0" name="Changes" comment="Push push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestGlucoseLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GlucoseLevelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PatientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673799005009</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Push push">
+      <created>1673803774642</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673803774642</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Push push">
+      <created>1673803913283</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673803913283</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,9 +271,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding data" />
-    <MESSAGE value="Push push" />
     <MESSAGE value="model tests passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="model tests passed" />
+    <MESSAGE value="Push push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Push push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
