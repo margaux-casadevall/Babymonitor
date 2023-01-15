@@ -63,10 +63,38 @@
         <div class="glucose">
             <form id="glucose-form" action="/" method="post">
                 <input type="text" name="Glucose level" id="glucose-field" class="glucose-form-field" placeholder="Glucose level">
+                <br>
+                <input type="text" id="time-field" name="Time" placeholder="Time">
+                <br>
+                <button type="submit">Save</button>
             </form>
-            <span class="text11"><span>mmol</span></span>
         </div>
+        <script>
+            const form = document.getElementById("glucose-form");
 
+            form.addEventListener("submit",(e) => {
+                e.preventDefault();//in order to prevent page request
+
+                const gluc = document.getElementById("glucose-field").value;
+                const timeg = document.getElementById("time_field").value;
+
+                //Crete an object with the inputs
+                const glucdata = {
+                    input1: gluc,
+                    input2: timeg
+                };
+                //Send a POST request to the backend with the inputs as the request body
+                fetch("http://localhost:8080/submit", {
+                    method: "POST",
+                    body: JSON.stringify(data),
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                }).catch(error =>{
+                    console.log(error);
+                });
+            });
+        </script>
         <div class="time">
             <form id="time-form" action="/" method="post">
                 <input type="text" name="Time" id="time-field" class="time-form-field" placeholder="Time">

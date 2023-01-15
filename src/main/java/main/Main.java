@@ -14,6 +14,8 @@ import java.io.Reader;
 
 public class Main {
   public static void main(String[] args) throws Exception {
+    //start the Apache Tomcat server, set port and root directory
+    //and configure classpath to include the target/classes directory
     String webappDirLocation = "src/main/webapp/";
     Tomcat tomcat = new Tomcat();
     tomcat.setPort(8080);

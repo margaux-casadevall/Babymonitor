@@ -41,8 +41,10 @@
             <span>Patient Directory</span>
         </span>
     </div>
+    <div class="bar">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for ID">
+    </div>
     <main id="main-holder">
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for ID">
         <table id ="myTable">
             <tr class ="header-table">
               <th>Patient ID</th>

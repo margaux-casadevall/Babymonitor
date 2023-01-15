@@ -13,6 +13,8 @@ public class Patient {
     private String doctor;
     private ArrayList<GlucoseLevel> glucoseLevels;
     private ArrayList<Comment> comments;
+    private double lowerThreshold;
+    private double upperThreshold;
 
     public Patient() {
         this.glucoseLevels = new ArrayList<>();
@@ -63,5 +65,11 @@ public class Patient {
 
     public void setComments(ArrayList<Comment> comments) {
         this.comments = comments;
+    }
+    public double getUpperThreshold() {
+        return upperThreshold;
+    }
+    public double getLowerThreshold() {
+        return lowerThreshold;
     }
 }
