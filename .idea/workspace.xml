@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1301c0f1-e3dd-49cf-9193-e1566e283ff3" name="Changes" comment="adding data">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestGlucoseLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestPatient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestUser.java" afterDir="false" />
+    <list default="true" id="e7a232a4-afd9-4adc-938b-66ffccf9ecd0" name="Changes" comment="Push push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/DataServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/DataServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/thresholds.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/thresholds.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/thresholds.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/thresholds.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/data_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/data_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/data_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/data_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/thresholds_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/thresholds_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/thresholds_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/thresholds_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/data.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/data.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/login_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/login_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/patient_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/patient_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +70,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"

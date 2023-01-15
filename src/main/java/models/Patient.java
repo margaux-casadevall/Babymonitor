@@ -51,9 +51,7 @@ public class Patient {
         this.doctor = doctor;
     }
 
-    public ArrayList<GlucoseLevel> getGlucoseLevels() {
-        return glucoseLevels;
-    }
+    public ArrayList<GlucoseLevel> getGlucoseLevels() {return glucoseLevels;}
 
     public ArrayList<Comment> getComments() {
         return comments;
