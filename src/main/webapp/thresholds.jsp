@@ -59,48 +59,28 @@
         </button>
     </form>
     </div>
-    <main id="main-holder">
-        <div class="upper">mmol
+
+    <main id="main-holder-1">
+        <div class="upper">
             <form id="upperthresh-form" action="/" method="post">
                 <input type="text" name="Upper threshold (14)" id="upper-field" class="upper-form-field" placeholder="Upper threshold (14)">
             </form>
+            <span class="text11"><span>mmol</span></span>
         </div>
 
-        <div class="lower">mmol
-            <form id="lower-form" action="/" method="post">
+        <div class="lower">
+            <form id="lowerthresh-form" action="/" method="post">
                 <input type="text" name="Lower threshold (4.5)" id="lower-field" class="lower-form-field" placeholder="Lower threshold (4.5)">
             </form>
+            <span class="text15"><span>mmol</span></span>
         </div>
-
-        <button class="savecomment">
-            <span class="text27"><span>Save</span></span>
-        </button>
-        <span class="text31"><span>NEW COMMENT</span></span>
-    </main>
 
         <button class="savebutton">
             <span class="text17"><span>Save changes</span></span>
-        </button>
-        <button class="default">
-            <span class="text19"><span>Default threshold</span></span>
         </button>
         <span class="text21"><span>THRESHOLD LIMITS</span></span>
     </main>
 </body>
 
 
-<div class="upper">
-            <span class="text09">
-            <span>Upper threshold (14)</span>
-            </span>
-    <span class="text11"><span>mmol</span></span>
-    <form id="time-form" action="/" method="post">
-        <input type="text" name="Default time" id="time-field" class="time-form-field" placeholder="Default time">
-    </form>
-</div>
-<div class="lower">
-            <span class="text13">
-            <span>Lower threshold (4.5)</span>
-            </span>
-    <span class="text15"><span>mmol</span></span>
-</div>
+
