@@ -75,17 +75,31 @@
                 type: "line",
                 data: {
                     labels: xValues,
-                    datasets: [{
+                    datasets: [
+                        {
+                        data: [14.5, 14.5, 14.5, 14.5, 14.5,14.5,14.5,14.5,14.5,14.5],
+                        label: 'Upper threshold',
+                        yAxisID: 'B',
+                        borderColor: "red",
+                        fill: false
+                    }, /*{
+                        data: [3,7,20,50,60,40,20,10,2,1],
+                        label: 'Lower threshold',
+                        yAxisID: 'A',
+                        borderColor: "red",
+                        fill: false
+                        }*/
+                        {
                         data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
                         label: 'A',
                         yAxisID: 'A',
-                        borderColor: "red",
+                        borderColor: "green",
                         fill: false
                     }, {
                         data: [3,7,20,50,60,40,20,10,2,1],
                         label: 'B',
                         yAxisID: 'B',
-                        borderColor: "blue",
+                        borderColor: "orange",
                         fill: false
                     }]
                 },
