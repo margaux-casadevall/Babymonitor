@@ -14,6 +14,7 @@ public class Helpers {
     private static final String jwtSecret = "03a1b263-c940-4160-bd3f-b86dcb300770";
     private static final String jwtHeader = "{\"alg\":\"HS256\",\"typ\":\"JWT\"}";
 
+    //hashing of the password for security reasons
     public static String sha256(final String base) {
         try{
             final MessageDigest digest = MessageDigest.getInstance("SHA-256");
@@ -31,6 +32,7 @@ public class Helpers {
         }
     }
 
+    /*
     public static String createJwt(User user) {
         JSONObject payload = new JSONObject();
 
@@ -91,8 +93,9 @@ public class Helpers {
 
     private static String decode(String encodedString) {
         return new String(Base64.getUrlDecoder().decode(encodedString));
-    }
+    }*/
 
+    //return the redirect path for a given request and path
     public static String redirectUrl(HttpServletRequest request, String path) {
         if(request.getQueryString() == null) {
             return request.getContextPath() + path;
