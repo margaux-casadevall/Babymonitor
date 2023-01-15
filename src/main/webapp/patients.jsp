@@ -41,10 +41,10 @@
         <h2>Baby Monitor</h2>
     </div>
     <div class="header">
-        <form action="index.html">
-            <a href="/logout">
-                <img src="images/exit.png" alt="LogOut"/>
-            </a>
+        <form action="/logout">
+            <button type="submit">
+                <img src="/images/exit.png" alt="LogOut"/>
+            </button>
         </form>
         <span class="text05">
             <span>Patient Directory</span>
