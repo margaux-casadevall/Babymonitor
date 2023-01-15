@@ -7,7 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a232a4-afd9-4adc-938b-66ffccf9ecd0" name="Changes" comment="testing data servlet" />
+    <list default="true" id="e7a232a4-afd9-4adc-938b-66ffccf9ecd0" name="Changes" comment="model tests passed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GlucoseLevelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GlucoseLevelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +44,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -69,19 +73,24 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestingDataServlet.doGet_PatientNotFound">
+  <component name="RunManager" selected="JUnit.CommentTest">
+    <configuration name="CommentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebApp" />
       <option name="PACKAGE_NAME" value="" />
@@ -91,40 +100,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestingDataServlet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Babymonitor" />
+    <configuration name="TestComment.testGetValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebApp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestingDataServlet" />
+      <option name="MAIN_CLASS_NAME" value="TestComment" />
+      <option name="METHOD_NAME" value="testGetValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGlucoseLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestGlucoseLevel" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestingDataServlet.doGet_PatientMissing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Babymonitor" />
+    <configuration name="TestGlucoseLevel.testGetValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebApp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestingDataServlet" />
-      <option name="METHOD_NAME" value="doGet_PatientMissing" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestingDataServlet.doGet_PatientNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Babymonitor" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestingDataServlet" />
-      <option name="METHOD_NAME" value="doGet_PatientNotFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestingDataServlet.doGet_redirectsToLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Babymonitor" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestingDataServlet" />
-      <option name="METHOD_NAME" value="doGet_redirectsToLogin" />
+      <option name="MAIN_CLASS_NAME" value="TestGlucoseLevel" />
+      <option name="METHOD_NAME" value="testGetValue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestingDataServlet.doGet_PatientNotFound" />
-        <item itemvalue="JUnit.TestingDataServlet.doGet_PatientMissing" />
-        <item itemvalue="JUnit.TestingDataServlet.doGet_redirectsToLogin" />
-        <item itemvalue="JUnit.TestingDataServlet" />
+        <item itemvalue="JUnit.CommentTest" />
         <item itemvalue="JUnit.TestComment" />
+        <item itemvalue="JUnit.TestComment.testGetValue" />
+        <item itemvalue="JUnit.TestGlucoseLevel" />
+        <item itemvalue="JUnit.TestGlucoseLevel.testGetValue" />
       </list>
     </recent_temporary>
   </component>

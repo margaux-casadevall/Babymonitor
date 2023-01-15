@@ -123,10 +123,10 @@ html {
     box-shadow: 0px 0px 5px 2px black;
   }
   .save {
-    bottom: -20%;
+    bottom: -50%;
     right: 2%;
     width: 10%;
-    height: 10%;
+    height: 28%;
     display: flex;
     overflow: hidden;
     position: absolute;
