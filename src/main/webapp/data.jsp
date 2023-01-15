@@ -189,6 +189,11 @@
             <%
             for(Comment comment : patient.getComments()) {          
             %>
+            <span>Time: <%=comment.getTimestamp()%></span>
+            <br/>
+            <span><%=comment.getValue()%></span>
+            <br/>
+            <br/>
             <%
             }    
             %>
