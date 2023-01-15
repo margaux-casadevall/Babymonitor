@@ -67,7 +67,7 @@
             </button>
         </form>
     </div>
-    <canvas id="myGraph" style="width:100%;max-width:700px">
+    <canvas id="myGraph"style="width:100%;max-width:700px">
         <script>
             var xValues = [100,200,300,400,500,600,700,800,900,1000];
 
@@ -112,6 +112,12 @@
             });
         </script>
     </canvas>
+    <div id="comments-frame">
+        <h2>Comments</h2>
+        <div id="comments-list">
+            <!-- Comments retrieved from the database will be displayed here -->
+        </div>
+    </div>
     <form action="/patient/thresholds">
         <input name="id" value="<%=patient.getId()%>" type="hidden"/>
         <button class="edit-thresh">

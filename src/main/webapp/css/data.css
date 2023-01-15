@@ -97,7 +97,6 @@ html {
     font-weight: 700;
     line-height: normal;
     font-stretch: normal;
-    text-decoration: none;
   }
 #myGraph {
   width: 70%;
@@ -147,3 +146,15 @@ html {
     line-height: normal;
     font-stretch: normal;
   }
+#comments-frame {
+  width: 40%;
+  max-width: 400px;
+  height: 50%;
+  bottom: 20%;
+  padding: 10px;
+  background-color: #f2f2f2;
+  position: absolute;
+  right: 2%;
+  border: 1px solid #ccc;
+  overflow-y: scroll; /* Allows for scrolling if the comments overflow the frame */
+}
