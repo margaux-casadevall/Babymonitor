@@ -26,7 +26,7 @@ public class ThresholdServlet extends HttpServlet
     if(user == null) {
       response.sendRedirect("/login");
       return;
-    } else if(user.getRole() != "Doctor") {
+    } else if(!user.getRole().equals("Doctor")) {
       response.setStatus(403);
       return;
     }
