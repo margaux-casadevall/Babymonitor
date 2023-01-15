@@ -13,12 +13,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/data.css">
-    <script defer src="js/data.js"></script>
+    <script defer src="../js/data.js"></script>
     <div>
         <canvas id="myChart"></canvas>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
     <style>
         button{
             border: none;
@@ -123,27 +124,15 @@
                 type: "line",
                 data: {
                     datasets: [
-                        {
-                        data: [14.5, 14.5, 14.5, 14.5, 14.5,14.5,14.5,14.5,14.5,14.5],
-                        label: 'Upper threshold',
-                        yAxisID: 'B',
-                        borderColor: "red",
-                        fill: false
-                    }, /*{
-                        data: [3,7,20,50,60,40,20,10,2,1],
-                        label: 'Lower threshold',
-                        yAxisID: 'A',
-                        borderColor: "red",
-                        fill: false
-                        }*/
-                        {
-                        data: glucoseLevels,
+                    {
+                        data: glucoseLevels.map(g => ({x: g.timestamp, y: g.value})),
                         label: 'A',
                         yAxisID: 'A',
                         borderColor: "green",
                         fill: false
-                    }, {
-                        data: [3,7,20,50,60,40,20,10,2,1],
+                    }, 
+                    {
+                        data: glucoseLevelsHP.map(g => ({x: g.timestamp, y: g.value})),
                         label: 'B',
                         yAxisID: 'B',
                         borderColor: "orange",

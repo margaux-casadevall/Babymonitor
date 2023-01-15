@@ -71,7 +71,8 @@ public class AddDataServlet extends HttpServlet
     if(measurement != "") {
       patient.getGlucoseLevels().add(new GlucoseLevel(date, Double.parseDouble(measurement)));
     }
-    else if(comment != "") {
+    
+    if(comment != "") {
       patient.getComments().add(new Comment(date, comment));
     }
 
