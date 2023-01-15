@@ -5,13 +5,11 @@ import java.util.Date;
 //Doctors or nurses add comments
 public class Comment {
     private Date timestamp;
-    private String value;
+    private Double value;
 
-    public Comment() {}
-
-    public Comment(Date timestamp, String value) {
+    public Comment(Date timestamp, Double value) {
         this.timestamp = timestamp;
-        this.value = value;
+        this.value = Double.valueOf(value);
     }
 
     public Date getTimestamp() {
@@ -22,11 +20,11 @@ public class Comment {
         this.timestamp = timestamp;
     }
 
-    public String getValue() {
+    public Double getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+    public void setValue(Double value) {
         this.value = value;
     }
 }

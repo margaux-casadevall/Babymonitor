@@ -6,8 +6,6 @@ public class GlucoseLevel {
     private Date timestamp;
     private Double value;
 
-    public GlucoseLevel() {}
-
     public GlucoseLevel(Date timestamp, Double value) {
         this.timestamp = timestamp;
         this.value = value;
