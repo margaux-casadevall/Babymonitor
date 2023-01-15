@@ -1,5 +1,6 @@
 package servlets;
 
+import com.mongodb.client.MongoCollection;
 import helpers.Helpers;
 import services.PatientService;
 
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.swing.text.Document;
 import java.io.IOException;
 
 @WebServlet("/patient/thresholds")
@@ -33,4 +35,13 @@ public class ThresholdServlet extends HttpServlet
     RequestDispatcher dispatch = context.getRequestDispatcher("/thresholds.jsp");
     dispatch.forward(request, response);
   }
+  protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    var LowerThresh = request.getParameter("Lower threshold (4.5)");
+    var UpperThresh = request.getParameter("Upper threshold (14)");
+
+
+    response.getWriter().write(UpperThresh + LowerThresh);
+  }
+
 }
