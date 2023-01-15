@@ -59,7 +59,7 @@
       <span>Patient ID: <%=patient.getId()%></span>
   </span>
         <span class="text07">
-      <span>St Mary&apos;s</span>
+      <span><%=patient.getHospital()%></span>
   </span>
         <form action="/">
             <button type="submit" class="home-btn">
@@ -67,14 +67,54 @@
             </button>
         </form>
     </div>
-    <canvas id="myGraph"style="width:100%;max-width:700px">
+    <canvas id="myGraph" style="width: 35%; height: auto;">
         <script>
-            var xValues = [100,200,300,400,500,600,700,800,900,1000];
-
+           /* new Chart("MyGraph", {
+                type: 'line',
+                data: {
+                    labels: ['00:00', '00:10', '00:20', '00:30', '00:40', '00:50', '01:00', '01:10', '01:20', '01:30'],
+                    datasets: [{
+                        label: 'Concentration',
+                        data: [12, 19, 3, 5, 2, 3, 20, 15, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100],
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            type: 'time',
+                            time: {
+                                unit: 'minute',
+                                unitStepSize: 15,
+                                min: '00:00',
+                                max: '24:00',
+                                displayFormats: {
+                                    'minute': 'HH:mm'
+                                }
+                            },
+                            gridLines: {
+                                display: false
+                            }
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Concentration'
+                            },
+                            ticks: {
+                                min: 0,
+                                max: 100,
+                                stepSize: 10
+                            }
+                        }]
+                    }
+                }
+            });*/
             new Chart("myGraph", {
                 type: "line",
                 data: {
-                    labels: xValues,
                     datasets: [
                         {
                         data: [14.5, 14.5, 14.5, 14.5, 14.5,14.5,14.5,14.5,14.5,14.5],
@@ -120,7 +160,23 @@
                                 max: 100,
                                 min: 0
                             }
-                        }]
+                        }],
+                        xAxes: [{
+                            type: 'time',
+                            time: {
+                                unit: 'minute',
+                                unitStepSize: 15,
+                                min: '00:00',
+                                max: '24:00',
+                                displayFormats: {
+                                    'minute': 'HH:mm'
+                                }
+                            },
+                            gridLines: {
+                                display: false
+                            }
+                        }],
+
                     }
                 }
             });
