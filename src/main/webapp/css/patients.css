@@ -47,11 +47,12 @@ html {
   }
   #main-holder {
     width: 80%;
-    height: 60%;
+    height:auto;
     left: 10%;
     display: table;
     position: absolute;
-    top: 0;
+    top: 35%;
+    z-index:auto;
   }
   #header-table {
     padding: 30px;
@@ -64,7 +65,22 @@ html {
     color: white;
     font-size: 20px;
   }
-  
+.bar {
+  top: 25%;
+  left: 5%;
+  width: 90%;
+  height: 25%;
+  display: flex;
+  position: absolute;
+  align-self: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+}
   #myInput {
     background-position: 10px 12px;
     background-repeat: no-repeat;
@@ -73,7 +89,8 @@ html {
     padding: 10px 20px 10px 40px;
     border: 1px solid #ddd;
     margin-bottom: 5%;
-    margin-top: 30%;
+    margin-right: auto;
+    margin-left: auto;
   }
   #myTable {
     top:0;
