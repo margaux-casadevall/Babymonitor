@@ -1,5 +1,6 @@
 <%@ page import="models.Patient" %>
 <%@ page import="models.GlucoseLevel" %>
+<%@ page import="models.Comment" %>
 <%
     Patient patient = (Patient)request.getAttribute("patient");
 %>
@@ -185,7 +186,12 @@
     <div id="comments-frame">
         <h2>Comments</h2>
         <div id="comments-list">
-            <%=patient.getComments()%>
+            <%
+            for(Comment comment : patient.getComments()) {          
+            %>
+            <%
+            }    
+            %>
         </div>
     </div>
     <form action="/patient/thresholds">
