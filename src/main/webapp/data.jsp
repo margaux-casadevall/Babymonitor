@@ -129,7 +129,7 @@
     <div id="comments-frame">
         <h2>Comments</h2>
         <div id="comments-list">
-            <!-- Comments retrieved from the database will be displayed here -->
+            <%=patient.getComments()%>
         </div>
     </div>
     <form action="/patient/thresholds">
