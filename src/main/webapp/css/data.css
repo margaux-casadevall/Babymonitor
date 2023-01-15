@@ -99,8 +99,8 @@ html {
     font-stretch: normal;
   }
 #myGraph {
-  width: 70%;
-  height: 50%;
+  width: auto;
+  height: auto;
   top: 30%;
   left: 15%;
   display: grid;
