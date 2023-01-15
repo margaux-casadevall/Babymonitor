@@ -121,10 +121,10 @@ public final class data_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
 
     Patient patient = (Patient)request.getAttribute("patient");
 
@@ -184,33 +184,33 @@ public final class data_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <span class=\"text05\">\r\n");
       out.write("      <span>Patient ID: ");
       out.print(patient.getId());
-      out.write("</span>\r\n");
-      out.write("  </span>\r\n");
-      out.write("        <span class=\"text07\">\r\n");
+      out.write("</span>\n");
+      out.write("  </span>\n");
+      out.write("        <span class=\"text07\">\n");
       out.write("      <span>");
       out.print(patient.getHospital());
-      out.write("</span>\r\n");
-      out.write("  </span>\r\n");
-      out.write("        <form action=\"/\">\r\n");
-      out.write("            <button type=\"submit\" class=\"home-btn\">\r\n");
-      out.write("                <img src=\"../images/house.jpg\" alt=\"Home\"/>\r\n");
-      out.write("            </button>\r\n");
-      out.write("        </form>\r\n");
-      out.write("    </div>\r\n");
-      out.write("    <canvas id=\"myGraph\" style=\"width: 35%; height: auto;\">\r\n");
-      out.write("        <script>\r\n");
+      out.write("</span>\n");
+      out.write("  </span>\n");
+      out.write("        <form action=\"/\">\n");
+      out.write("            <button type=\"submit\" class=\"home-btn\">\n");
+      out.write("                <img src=\"../images/house.jpg\" alt=\"Home\"/>\n");
+      out.write("            </button>\n");
+      out.write("        </form>\n");
+      out.write("    </div>\n");
+      out.write("    <canvas id=\"myGraph\" style=\"width: 35%; height: auto;\">\n");
+      out.write("        <script>\n");
       out.write("           let glucoseLevels = ");
       out.print(JSONObject.valueToString(patient.getGlucoseLevels()));
-      out.write("\r\n");
+      out.write("\n");
       out.write("           let glucoseLevelsHP = ");
       out.print(JSONObject.valueToString(patient.getGlucoseLevelsHP()));
-      out.write("\r\n");
+      out.write("\n");
       out.write("           let comments = ");
       out.print(JSONObject.valueToString(patient.getComments()));
-      out.write("\r\n");
+      out.write("\n");
       out.write("           let upperThreshold = ");
       out.print(patient.getUpperThreshold());
-      out.write("\r\n");
+      out.write("\n");
       out.write("           let lowerThreshold = ");
       out.print(patient.getLowerThreshold());
       out.write("\r\n");
@@ -323,31 +323,31 @@ public final class data_jsp extends org.apache.jasper.runtime.HttpJspBase
 
             for(Comment comment : patient.getComments()) {          
             
-      out.write("\r\n");
+      out.write("\n");
       out.write("            <span>Time: ");
       out.print(comment.getTimestamp());
-      out.write("</span>\r\n");
-      out.write("            <br/>\r\n");
+      out.write("</span>\n");
+      out.write("            <br/>\n");
       out.write("            <span>");
       out.print(comment.getValue());
-      out.write("</span>\r\n");
-      out.write("            <br/>\r\n");
-      out.write("            <br/>\r\n");
+      out.write("</span>\n");
+      out.write("            <br/>\n");
+      out.write("            <br/>\n");
       out.write("            ");
 
             }    
             
-      out.write("\r\n");
-      out.write("        </div>\r\n");
-      out.write("    </div>\r\n");
-      out.write("    <form action=\"/patient/thresholds\">\r\n");
+      out.write("\n");
+      out.write("        </div>\n");
+      out.write("    </div>\n");
+      out.write("    <form action=\"/patient/thresholds\">\n");
       out.write("        <input name=\"id\" value=\"");
       out.print(patient.getId());
-      out.write("\" type=\"hidden\"/>\r\n");
-      out.write("        <button class=\"edit-thresh\">\r\n");
-      out.write("            <span class=\"text19\"><span>Edit threshold</span></span>\r\n");
-      out.write("        </button>\r\n");
-      out.write("    </form>\r\n");
+      out.write("\" type=\"hidden\"/>\n");
+      out.write("        <button class=\"edit-thresh\">\n");
+      out.write("            <span class=\"text19\"><span>Edit threshold</span></span>\n");
+      out.write("        </button>\n");
+      out.write("    </form>\n");
       out.write("</body>");
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
