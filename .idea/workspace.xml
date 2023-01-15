@@ -8,10 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7a232a4-afd9-4adc-938b-66ffccf9ecd0" name="Changes" comment="model tests passed">
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestGlucoseLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GlucoseLevelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PatientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helpers/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helpers/Helpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/GlucoseLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/GlucoseLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AddDataServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/AddDataServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/PatientServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/PatientServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GlucoseLevelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GlucoseLevelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PatientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PatientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/war-file/WebApp-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/war-file/WebApp-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +89,21 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestComment">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CommentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebApp" />
       <option name="PACKAGE_NAME" value="" />
@@ -120,15 +142,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WebApp" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestUser" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WebApp [clean,package,exec:exec]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -158,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommentTest" />
         <item itemvalue="JUnit.TestComment" />
         <item itemvalue="JUnit.TestComment.testGetValue" />
         <item itemvalue="JUnit.TestGlucoseLevel" />
         <item itemvalue="JUnit.TestGlucoseLevel.testGetValue" />
-        <item itemvalue="JUnit.TestUser" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673799005009</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="model tests passed">
+      <created>1673799111786</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673799111786</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
