@@ -1,4 +1,3 @@
-/*
 import models.GlucoseLevel;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -26,5 +25,4 @@ public class GlucoseLevelTest {
         Assertions.assertEquals(Double.valueOf("4"), glu.getValue());
     }
 }
-*/
 

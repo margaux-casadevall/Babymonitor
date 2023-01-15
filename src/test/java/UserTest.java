@@ -1,4 +1,3 @@
-/*
 import models.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -32,4 +31,4 @@ public class UserTest {
 
 }
 
-*/
+

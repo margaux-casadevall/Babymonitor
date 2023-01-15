@@ -1,4 +1,4 @@
-/*
+
 import models.Comment;
 import models.Patient;
 import org.junit.jupiter.api.Assertions;
@@ -14,7 +14,7 @@ public class CommentTest {
     Comment com;
 
     Date timestamp1 = Date.from(Instant.parse("2023-01-09T12:30:00.000Z"));
-    Double value1 = Double.valueOf("6");
+    String value1 = String.valueOf(Double.valueOf("6"));
 
     @BeforeEach
     public void setUp(){
@@ -25,8 +25,7 @@ public class CommentTest {
         Assertions.assertEquals(Date.from(Instant.parse("2023-01-09T12:30:00.000Z")), com.getTimestamp());}
     @Test
     public void testGetValue(){
-        Assertions.assertEquals(Double.valueOf("6"), com.getValue());
+        Assertions.assertEquals(String.valueOf(Double.valueOf("6")), com.getValue());
     }
 }
 
- */
