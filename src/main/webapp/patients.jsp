@@ -31,15 +31,6 @@
 </head>
 
 <body>
-    <div class="footer">
-        <img
-            alt="Logo"
-            src="images/logo.png"
-        />
-        <h1>Premature</h1>
-        <br />
-        <h2>Baby Monitor</h2>
-    </div>
     <div class="header">
         <form action="/logout">
             <button type="submit">
@@ -73,4 +64,13 @@
           %>
           </table>
     </main>
+    <div class="footer">
+        <img
+                alt="Logo"
+                src="images/logo.png"
+        />
+        <h1>Premature</h1>
+        <br />
+        <h2>Baby Monitor</h2>
+    </div>
 </body>
