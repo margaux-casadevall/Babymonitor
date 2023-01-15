@@ -33,10 +33,12 @@ public class PatientService {
         patients = database.getCollection("Patients", Patient.class);
     }
 
+    //return an ArrayList of all Patient objects in the MongoDB collection
     public ArrayList<Patient> list() {
         return patients.find().into(new ArrayList<>());
     }
 
+    //Return Patient object with specified id from the MongoDB collection
     public Patient get(String id) {
         Bson filter = Filters.eq("id", id);
 
@@ -45,6 +47,7 @@ public class PatientService {
         return patient;
     }
 
+    //Replace the Patient object with the specified id in the MongoDB collection with specified patient object
     public void replace(String id, Patient patient) {
         Bson filter = Filters.eq("id", id);
 

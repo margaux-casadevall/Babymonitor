@@ -62,15 +62,17 @@
 
     <main id="main-holder-1">
         <div class="upper">
-            <form id="upperthresh-form" action="/" method="post">
+            <form id="upperthresh-form" action="/patient/thresholds" method="post">
                 <input type="text" name="Upper threshold (14)" id="upper-field" class="upper-form-field" placeholder="Upper threshold (14)">
+                <input type="text" name="Lower threshold (4.5)" id="lower-field" class="lower-form-field" placeholder="Lower threshold (4.5)">
+                <input type="submit" value="Save">
             </form>
             <span class="text11"><span>mmol</span></span>
         </div>
 
         <div class="lower">
             <form id="lowerthresh-form" action="/" method="post">
-                <input type="text" name="Lower threshold (4.5)" id="lower-field" class="lower-form-field" placeholder="Lower threshold (4.5)">
+                <input type="text" name="Lower threshold (4.5)" id="lower-fieldd" class="lower-form-field" placeholder="Lower threshold (4.5)">
             </form>
             <span class="text15"><span>mmol</span></span>
         </div>

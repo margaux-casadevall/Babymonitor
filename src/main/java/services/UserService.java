@@ -22,6 +22,7 @@ public class UserService {
 
     private final MongoCollection<User> users;
 
+    //Initialize MongoClient and MongoDatabase and create code registry that is used to encode and decode pojos to and from BSON
     public UserService(){
         CodecProvider pojoCodecProvider = PojoCodecProvider.builder().automatic(true).build();
         CodecRegistry pojoCodecRegistry = fromRegistries(getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
@@ -32,10 +33,12 @@ public class UserService {
         users = database.getCollection("Users", User.class);
     }
 
+    //Create new User object in the MongoDB collection
     public void create(User user) {
         users.insertOne(user);
     }
 
+    //Find a User object with the specified username and password in the MongoDB collection
     public User login(String username, String password) {
         Bson filter = Filters.and(Filters.eq("username", username), Filters.eq("password", password));
 
