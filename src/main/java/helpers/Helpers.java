@@ -87,13 +87,14 @@ public class Helpers {
         }
     }
 
+
     private static String encode(byte[] bytes) {
         return Base64.getUrlEncoder().withoutPadding().encodeToString(bytes);
     }
 
     private static String decode(String encodedString) {
         return new String(Base64.getUrlDecoder().decode(encodedString));
-    }*/
+    } */
 
     //return the redirect path for a given request and path
     public static String redirectUrl(HttpServletRequest request, String path) {

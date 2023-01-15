@@ -2,7 +2,6 @@ package models;
 
 import org.bson.codecs.pojo.annotations.BsonProperty;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -17,7 +16,7 @@ public class Patient {
     private double lowerThreshold;
     private double upperThreshold;
 
-    public Patient(String doctor, String id, String hospital, LocalDate dateAdmitted) {
+    public Patient() {
         this.glucoseLevels = new ArrayList<>();
         this.comments = new ArrayList<>();
     }

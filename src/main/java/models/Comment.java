@@ -4,27 +4,34 @@ import java.util.Date;
 
 //Doctors or nurses add comments
 public class Comment {
+    //time comment was made
     private Date timestamp;
-    private Double value;
+    private String value;
 
-    public Comment(Date timestamp, Double value) {
+    public Comment() {}
+
+    public Comment(Date timestamp, String value) {
         this.timestamp = timestamp;
-        this.value = Double.valueOf(value);
+        this.value = value;
     }
 
+    //retrieve timestamp value
     public Date getTimestamp() {
         return timestamp;
     }
 
+    //set timestamp value
     public void setTimestamp(Date timestamp) {
         this.timestamp = timestamp;
     }
 
-    public Double getValue() {
+    //retrieve value
+    public String getValue() {
         return value;
     }
 
-    public void setValue(Double value) {
+    //set value
+    public void setValue(String value) {
         this.value = value;
     }
 }

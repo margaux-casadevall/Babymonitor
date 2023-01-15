@@ -66,7 +66,7 @@ public class AddDataServlet extends HttpServlet
       patient.getGlucoseLevels().add(new GlucoseLevel(new Date(), Double.parseDouble(value)));
     }
     else if(type.equals("comment")) {
-      patient.getComments().add(new Comment(new Date(), Double.parseDouble(value)));
+      patient.getComments().add(new Comment(new Date(), value));
     }
 
     PatientService.Instance.replace(id, patient);
