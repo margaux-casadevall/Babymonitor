@@ -21,7 +21,7 @@ public class ThresholdServlet extends HttpServlet
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
   {
     if(request.getSession().getAttribute("user") == null) {
-      response.sendRedirect(Helpers.redirectUrl(request, "/login"));
+      response.sendRedirect("/login");
       return;
     }
 
@@ -37,11 +37,18 @@ public class ThresholdServlet extends HttpServlet
   }
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-    var LowerThresh = request.getParameter("Lower threshold (4.5)");
-    var UpperThresh = request.getParameter("Upper threshold (14)");
+    var lower = request.getParameter("lower");
+    var upper = request.getParameter("upper");
 
+    var id = request.getParameter("id");
 
-    response.getWriter().write(UpperThresh + LowerThresh);
+    var patient = PatientService.Instance.get(id);
+
+    patient.setLowerThreshold(Double.parseDouble(lower));
+    patient.setUpperThreshold(Double.parseDouble(upper));
+
+    PatientService.Instance.replace(id, patient);
+
+    response.sendRedirect("/patient/data?id=" + id);
   }
-
 }

@@ -66,10 +66,20 @@ public class Patient {
     public void setComments(ArrayList<Comment> comments) {
         this.comments = comments;
     }
+
     public double getUpperThreshold() {
         return upperThreshold;
     }
+
+    public void setUpperThreshold(Double value) {
+        this.upperThreshold = value;
+    }
+
     public double getLowerThreshold() {
         return lowerThreshold;
+    }
+
+    public void setLowerThreshold(Double value) {
+        this.lowerThreshold = value;
     }
 }

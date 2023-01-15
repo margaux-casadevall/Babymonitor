@@ -41,7 +41,7 @@ public class LoginServlet extends HttpServlet
     } else {
       // valid login- to patient directory
       request.getSession().setAttribute("user", user);
-      response.sendRedirect(Helpers.redirectUrl(request, "/patients"));
+      response.sendRedirect("/patients");
     }
   }
 }

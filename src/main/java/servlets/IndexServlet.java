@@ -21,9 +21,9 @@ public class IndexServlet extends HttpServlet
     HttpSession session = request.getSession();
 
     if(session.getAttribute("user") == null) {
-      response.sendRedirect(Helpers.redirectUrl(request, "/login"));
+      response.sendRedirect("/login");
     } else {
-      response.sendRedirect(Helpers.redirectUrl(request, "/patients"));
+      response.sendRedirect("/patients");
     }
   }
 }
