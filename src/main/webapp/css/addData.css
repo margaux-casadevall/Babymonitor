@@ -113,7 +113,7 @@ html {
   }
   #main-holder-1 {
     width: 70%;
-    height: 25%;
+    height: 45%;
     top: 25%;
     left: 15%;
     display: grid;
@@ -121,120 +121,12 @@ html {
     background-color:rgb(133, 178, 192);
     border-radius: 7px;
     box-shadow: 0px 0px 5px 2px black;
-  }
-  .glucose {
-    top: 20%;
-    left: 5%;
-    width: 90%;
-    height: 20%;
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-    align-items: flex-start;
-    flex-shrink: 0;
-    border-color: rgba(10, 117, 151, 1);
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 1);
-  }
-  .text09 {
-    top: 10%;
-    left: 3%;
-    color: rgba(0, 0, 0, 0.4000000059604645);
-    width: 393px;
-    height: auto;
-    position: absolute;
-    font-size: 24px;
-    align-self: auto;
-    font-style: Medium;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    line-height: normal;
-    font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-  .text11 {
-    top: 10%;
-    right: 3%;
-    color: rgba(0, 0, 0, 1);
-    height: auto;
-    position: absolute;
-    font-size: 24px;
-    align-self: auto;
-    font-style: Medium;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    line-height: normal;
-    font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-  .time {
-    top: 47%;
-    left: 5%;
-    width: 90%;
-    height: 20%;
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-    align-items: flex-start;
-    flex-shrink: 0;
-    border-color: rgba(10, 117, 151, 1);
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 1);
-  }
-  .text13 {
-    top: 10%;
-    left: 3%;
-    color: rgba(0, 0, 0, 0.4000000059604645);
-    width: 393px;
-    height: auto;
-    position: absolute;
-    font-size: 24px;
-    align-self: auto;
-    font-style: Medium;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    line-height: normal;
-    font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-  .text15 {
-    top: 25%;
-    right: 3%;
-    color: rgba(0, 0, 0, 1);
-    height: auto;
-    position: absolute;
-    font-size: 24px;
-    align-self: auto;
-    font-style: Medium;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    line-height: normal;
-    font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
   }
   .save {
-    top: 65%;
+    bottom: 10%;
     right: 2%;
     width: 10%;
-    height: 20%;
+    height: 10%;
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -247,9 +139,27 @@ html {
     border-radius: 20px;
     background-color: rgba(10, 117, 151, 0.5);
   }
+.text11 {
+  top: 22%;
+  right:7%;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
   .text17 {
     color: rgba(0, 0, 0, 1);
-    top: 15%;
+    top: 3%;
     left: 20%;
     position: absolute;
     font-size: 20px;
@@ -264,164 +174,6 @@ html {
     margin-bottom: 0;
     text-decoration: none;
   }
-    #main-holder-2 {
-    width: 70%;
-    height: 35%;
-    top: 53%;
-    left: 15%;
-    display: grid;
-    position: absolute;
-    background-color:rgb(133, 178, 192);
-    border-radius: 7px;
-    box-shadow: 0px 0px 5px 2px black;
-  }
-
-  .comment-time {
-    top: 12%;
-    left: 5%;
-    width: 90%;
-    height: 15%;
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-    align-items: flex-start;
-    flex-shrink: 0;
-    border-color: rgba(10, 117, 151, 1);
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 1);
-  }
- .comment{
-   top: 25%;
-   left: 3%;
-   color: rgba(0, 0, 0, 0.4000000059604645);
-   width: 393px;
-   height: auto;
-   position: absolute;
-   font-size: 24px;
-   align-self: auto;
-   font-style: Medium;
-   text-align: left;
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: 500;
-   line-height: normal;
-   font-stretch: normal;
-   margin-right: 0;
-   margin-bottom: 0;
-   text-decoration: none;
- }
-  .text29 {
-    top: 25%;
-    left: 3%;
-    color: rgba(0, 0, 0, 0.4000000059604645);
-    width: 393px;
-    height: auto;
-    position: absolute;
-    font-size: 24px;
-    align-self: auto;
-    font-style: Medium;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    line-height: normal;
-    font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-  
-  .comment {
-    top: 33%;
-    left: 5%;
-    width: 90%;
-    height: 35%;
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-    align-items: flex-start;
-    flex-shrink: 0;
-    border-color: rgba(10, 117, 151, 1);
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 1);
-  }
-  .text23 {
-    top: 10%;
-    left: 3%;
-    color: rgba(0, 0, 0, 0.4000000059604645);
-    width: 393px;
-    height: auto;
-    position: absolute;
-    font-size: 24px;
-    align-self: auto;
-    font-style: Medium;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    line-height: normal;
-    font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-
-  .savecomment {
-    top: 75%;
-    right: 2%;
-    width: 10%;
-    height: 15%;
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-    align-items: flex-start;
-    flex-shrink: 0;
-    border-color: rgba(10, 117, 151, 1);
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 20px;
-    background-color: rgba(10, 117, 151, 0.5);
-  }
-  .text27 {
-    color: rgba(0, 0, 0, 1);
-    top: 15%;
-    left: 20%;
-    position: absolute;
-    font-size: 20px;
-    align-self: auto;
-    font-style: Medium;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    line-height: normal;
-    font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-
-  .text31 {
-    color: rgba(0, 0, 0, 1);
-    top: 2%;
-    left: 3%;
-    position: absolute;
-    font-size: 24px;
-    align-self: auto;
-    font-style: Bold;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    line-height: normal;
-    font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-
   .text21 {
     color: rgba(0, 0, 0, 1);
     top: 2%;
@@ -439,3 +191,65 @@ html {
     margin-bottom: 0;
     text-decoration: none;
   }
+
+  #form {
+    top: 20%;
+    height: 50%;
+    position: relative;
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+.measurement-form-field {
+  top: 0%;
+  left: 5%;
+  width: 90%;
+  height: 20%;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(10, 117, 151, 1);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.comment-form-field{
+  top: 30%;
+  left: 5%;
+  width: 90%;
+  height: 45%;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(10, 117, 151, 1);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.time-form-field{
+  top: 88%;
+  left: 5%;
+  width: 90%;
+  height: 20%;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(10, 117, 151, 1);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+}

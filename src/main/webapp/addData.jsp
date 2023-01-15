@@ -60,15 +60,6 @@
     </form>
     </div>
     <main id="main-holder-1">
-        <div class="glucose">
-            <form id="glucose-form" action="/" method="post">
-                <input type="text" name="Glucose level" id="glucose-field" class="glucose-form-field" placeholder="Glucose level">
-                <br>
-                <input type="text" id="time-field" name="Time" placeholder="Time">
-                <br>
-                <button type="submit">Save</button>
-            </form>
-        </div>
         <script>
             const form = document.getElementById("glucose-form");
 
@@ -95,34 +86,18 @@
                 });
             });
         </script>
-        <div class="time">
-            <form id="time-form" action="/" method="post">
-                <input type="text" name="Time" id="time-field" class="time-form-field" placeholder="Time">
-            </form>
-        </div>
 
         <button class="save">
             <span class="text17"><span>Save</span></span>
         </button>
-        <span class="text21"><span>NEW MEASUREMENT</span></span>
-    </main>
+        <span class="text21"><span>NEW MEASUREMENT AND COMMENT</span></span>
 
-    <main id="main-holder-2">
-        <div class="comment-time">
-            <form id="time2-form" action="/" method="post">
-                <input type="text" name="Default time" id="time2-field" class="time-form-field" placeholder="Default time">
-            </form>
-        </div>
 
-        <div class="comment">
-            <form id="comment-form" action="/" method="post">
-                <input type="text" name="Comment" id="comment-field" class="comment-form-field" placeholder="Comment">
-            </form>
-        </div>
-
-        <button class="savecomment">
-            <span class="text27"><span>Save</span></span>
-        </button>
-        <span class="text31"><span>NEW COMMENT</span></span>
+        <form id="form" action="/login" method="post">
+            <input type="text" name="Measurement" id="username-field" class="measurement-form-field" placeholder="Measurement (mmol)">
+            <input type="password" name="Comment" id="comment-field" class="comment-form-field" placeholder="Comment">
+            <input type="password" name="Time" id="time-field" class="time-form-field" placeholder="Time">
+        </form>
+        <span class="text11"><span>mmol</span></span>
     </main>
 </body>
