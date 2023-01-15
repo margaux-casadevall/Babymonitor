@@ -8,6 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7a232a4-afd9-4adc-938b-66ffccf9ecd0" name="Changes" comment="model tests passed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestGlucoseLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GlucoseLevelTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PatientTest.java" afterDir="false" />
