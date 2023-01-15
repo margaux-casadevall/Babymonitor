@@ -1,1 +1,1 @@
-web: java -jar target/*.war
+web: java -Xms150M -jar target/babymonitor-hackstreet.jar
