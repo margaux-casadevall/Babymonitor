@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a232a4-afd9-4adc-938b-66ffccf9ecd0" name="Changes" comment="Push push">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/data.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/data.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/patients.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/patients.css" afterDir="false" />
+    <list default="true" id="e7a232a4-afd9-4adc-938b-66ffccf9ecd0" name="Changes" comment="edits">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addData.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addData.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/data.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/data.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/thresholds.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/thresholds.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/addData_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/addData_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/addData_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/addData_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/data_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/data_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/data_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/data_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/patients_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/patients_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/patients_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/patients_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/thresholds_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/thresholds_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/thresholds_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/thresholds_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673777098452</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="edits">
+      <created>1673779801460</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673779801460</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +184,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding data" />
     <MESSAGE value="Push push" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push push" />
+    <MESSAGE value="edits" />
+    <option name="LAST_COMMIT_MESSAGE" value="edits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -64,6 +64,7 @@
             <form id="glucose-form" action="/" method="post">
                 <input type="text" name="Glucose level" id="glucose-field" class="glucose-form-field" placeholder="Glucose level">
             </form>
+            <span class="text11"><span>mmol</span></span>
         </div>
 
         <div class="time">

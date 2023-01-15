@@ -59,27 +59,20 @@
         </button>
     </form>
     </div>
+
     <main id="main-holder-1">
         <div class="upper">
-            <span class="text09">
-            <span>Upper threshold (14)</span>
-            </span>
+            <form id="upperthresh-form" action="/" method="post">
+                <input type="text" name="Upper threshold (14)" id="upper-field" class="upper-form-field" placeholder="Upper threshold (14)">
+            </form>
             <span class="text11"><span>mmol</span></span>
         </div>
-        <form id="upperthresh-form" action="/" method="post">
-            <input type="text" name="Upper threshold (14)" id="upper-field" class="upper-form-field" placeholder="Upper threshold (14)">
-            <input type="submit" value="Login" id="login-form-submit">
-        </form>
 
         <div class="lower">
-            <span class="text13">
-            <span>Lower threshold (4.5)</span>
-            </span>
-            <span class="text15"><span>mmol</span></span>
-        </div>
             <form id="lowerthresh-form" action="/" method="post">
                 <input type="text" name="Lower threshold (4.5)" id="lower-field" class="lower-form-field" placeholder="Lower threshold (4.5)">
             </form>
+            <span class="text15"><span>mmol</span></span>
         </div>
 
         <button class="savebutton">
@@ -89,22 +82,5 @@
     </main>
 </body>
 
-<button class="default">
-    <span class="text19"><span>Default threshold</span></span>
-</button>
 
-<div class="upper">
-            <span class="text09">
-            <span>Upper threshold (14)</span>
-            </span>
-    <span class="text11"><span>mmol</span></span>
-    <form id="time-form" action="/" method="post">
-        <input type="text" name="Default time" id="time-field" class="time-form-field" placeholder="Default time">
-    </form>
-</div>
-<div class="lower">
-            <span class="text13">
-            <span>Lower threshold (4.5)</span>
-            </span>
-    <span class="text15"><span>mmol</span></span>
-</div>
+
