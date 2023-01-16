@@ -1,0 +1,1 @@
+web: java -Xms150M -jar target/babymonitor-hackstreet.jar
