@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="httpobjects.apache.httpclient.4.x" type="repository">
+    <properties maven-id="org.httpobjects.apache-httpclient-4.x:httpobjects-apache-httpclient-4.x:0.27.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/httpobjects/apache-httpclient-4/x/httpobjects-apache-httpclient-4.x/0.27.0/httpobjects-apache-httpclient-4.x-0.27.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/httpobjects/client/httpobjects-client/0.27.0/httpobjects-client-0.27.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/httpobjects/httpobjects/0.27.0/httpobjects-0.27.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

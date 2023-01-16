@@ -2,6 +2,7 @@ package models;
 
 import java.util.Date;
 
+//Glucose levels will be later added to the patients database
 public class GlucoseLevel {
     private Date timestamp;
     private Double value;

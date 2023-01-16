@@ -5,6 +5,7 @@ public class User {
     private String password;
     private String role;
 
+    //Construction can be done with different numbers of arguments
     public User() {}
 
     public User(String username, String role) {
