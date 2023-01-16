@@ -2,7 +2,7 @@ package models;
 
 import java.util.Date;
 
-//Users add comments that are then added to the patients database
+//Comments will be later added to the patients database
 public class Comment {
     //time comment was made
     private Date timestamp;

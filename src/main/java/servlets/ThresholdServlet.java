@@ -27,7 +27,7 @@ public class ThresholdServlet extends HttpServlet
       response.sendRedirect("/login");
       return;
     } else if(!user.getRole().equals("Doctor")) {
-      response.setStatus(403);
+      response.setStatus(403); //forbidden access error
       return;
     }
 
