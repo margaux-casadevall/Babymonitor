@@ -21,7 +21,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
+
     <style>
         button{
             border: none;
@@ -71,78 +71,90 @@
             </button>
         </form>
     </div>
-    <canvas id="myGraph" style="width: 35%; height: auto;">
-        <script>
-           let glucoseLevels = <%=JSONObject.valueToString(patient.getGlucoseLevels())%>
-           let glucoseLevelsHP = <%=JSONObject.valueToString(patient.getGlucoseLevelsHP())%>
-           let comments = <%=JSONObject.valueToString(patient.getComments())%>
-           let upperThreshold = <%=patient.getUpperThreshold()%>
-           let lowerThreshold = <%=patient.getLowerThreshold()%>
 
-           /* new Chart("MyGraph", {
-                type: 'line',
-                data: {
-                    labels: ['00:00', '00:10', '00:20', '00:30', '00:40', '00:50', '01:00', '01:10', '01:20', '01:30'],
-                    datasets: [{
-                        label: 'Concentration',
-                        data: [12, 19, 3, 5, 2, 3, 20, 15, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100],
-                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                        borderColor: 'rgba(255, 99, 132, 1)',
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    scales: {
-                        xAxes: [{
-                            type: 'time',
-                            time: {
-                                unit: 'minute',
-                                unitStepSize: 15,
-                                min: '00:00',
-                                max: '24:00',
-                                displayFormats: {
-                                    'minute': 'HH:mm'
-                                }
-                            },
-                            gridLines: {
-                                display: false
-                            }
-                        }],
-                        yAxes: [{
-                            scaleLabel: {
-                                display: true,
-                                labelString: 'Concentration'
-                            },
-                            ticks: {
-                                min: 0,
-                                max: 100,
-                                stepSize: 10
-                            }
-                        }]
-                    }
-                }
-            });*/
+    <canvas id="myGraph" style="width: 25%; height: auto;">
+        <script>
+            let glucoseLevels = <%=JSONObject.valueToString(patient.getGlucoseLevels())%>
+                let glucoseLevelsHP = <%=JSONObject.valueToString(patient.getGlucoseLevelsHP())%>
+                let comments = <%=JSONObject.valueToString(patient.getComments())%>
+                let upperThreshold = <%=patient.getUpperThreshold()%>
+                let lowerThreshold = <%=patient.getLowerThreshold()%>
+            var thresholdHighArray = new Array(glucoseLevels.length).fill(upperThreshold);
+            var thresholdLowArray = new Array(glucoseLevels.length).fill(lowerThreshold);
+            var thresholdHighArrayHP = new Array(glucoseLevelsHP.length).fill(upperThreshold);
+            var thresholdLowArrayHP = new Array(glucoseLevelsHP.length).fill(lowerThreshold);
+
+            const dataCopy = glucoseLevels.map(item => {
+                const date = new Date(item.timestamp);
+                const totalMinutes = date.getHours() * 60 + date.getMinutes();
+                return {...item, totalMinutes};
+            });
+            console.log(dataCopy);
+            const sortedData = dataCopy.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+
+            const dataCopyHP = glucoseLevelsHP.map(item => {
+                const date = new Date(item.timestamp);
+                const totalMinutesHP = date.getHours() * 60 + date.getMinutes();
+                return {...item, totalMinutesHP};
+            });
+            console.log(dataCopyHP);
+            const sortedDataHP = dataCopyHP.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+
+
             new Chart("myGraph", {
                 type: "line",
                 data: {
                     datasets: [
-                    {
-                        data: glucoseLevels.map(g => ({x: g.timestamp, y: g.value})),
-                        label: 'A',
-                        yAxisID: 'A',
-                        borderColor: "green",
-                        fill: false
-                    }, 
-                    {
-                        data: glucoseLevelsHP.map(g => ({x: g.timestamp, y: g.value})),
-                        label: 'B',
-                        yAxisID: 'B',
-                        borderColor: "orange",
-                        fill: false
-                    }]
-                },
-                options: {
-                    legend: {display: false}
+                        {
+                            data: sortedData.map(item => ({x: item.timestamp, y: item.value})),
+                            label: 'Heel prick data',
+                            yAxisID: 'A',
+                            borderColor: "green",
+                            borderWidth: 1,
+                            fill: false
+                        },
+                        {
+                            data: thresholdHighArray,
+                            pointRadius: 0,
+                            label: 'HP threshold',
+                            yAxisID: 'A',
+                            borderColor: "red",
+                            borderWidth: 1,
+                            fill: false
+                        },
+                        {
+                            data: thresholdLowArray,
+                            yAxisID: 'A',
+                            pointRadius: 0,
+                            label: 'HP threshold',
+                            borderColor: "red",
+                            borderWidth: 1,
+                            fill: false
+                        }, {
+                            data: sortedDataHP.map(item => ({x: item.timestamp, y: item.value})),
+                            label: 'Patch data',
+                            yAxisID: 'B',
+                            borderColor: "orange",
+                            borderWidth: 1,
+                            fill: false
+                        },{
+                            data: thresholdLowArrayHP,
+                            yAxisID: 'B',
+                            label: 'Patch threshold',
+                            pointRadius: 0,
+                            borderColor: "blue",
+                            borderWidth: 1,
+                            fill: false
+                        },
+                        {
+                            data: thresholdHighArrayHP,
+                            label: 'Patch threshold',
+                            yAxisID: 'B',
+                            pointRadius: 0,
+                            borderColor: "blue",
+                            borderWidth: 1,
+                            fill: false
+                        },]
                 },
                 options: {
                     scales: {
@@ -154,27 +166,10 @@
                             id: 'B',
                             type: 'linear',
                             position: 'right',
-                            ticks: {
-                                max: 100,
-                                min: 0
-                            }
                         }],
                         xAxes: [{
-                            type: 'time',
-                            time: {
-                                unit: 'minute',
-                                unitStepSize: 15,
-                                min: '00:00',
-                                max: '24:00',
-                                displayFormats: {
-                                    'minute': 'HH:mm'
-                                }
-                            },
-                            gridLines: {
-                                display: false
-                            }
+                            display: false,
                         }],
-
                     }
                 }
             });
@@ -184,7 +179,7 @@
         <h2>Comments</h2>
         <div id="comments-list">
             <%
-            for(Comment comment : patient.getComments()) {          
+                for(Comment comment : patient.getComments()) {
             %>
             <span>Time: <%=comment.getTimestamp()%></span>
             <br/>
@@ -192,11 +187,11 @@
             <br/>
             <br/>
             <%
-            }    
+                }
             %>
         </div>
     </div>
-   <%
+        <%
     if(user.getRole().equals("Doctor")) {
     %>
     <form action="/patient/thresholds">
@@ -206,7 +201,7 @@
         </button>
     </form>
     %>
-    <%
+        <%
     }
     %>
 </body>
