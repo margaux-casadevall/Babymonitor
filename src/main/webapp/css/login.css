@@ -2,11 +2,9 @@ html {
     height: 100%;
     width:100%;
   }
-  
   body {
     height: 100%;
     width:100%;
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     justify-items: relative;
@@ -40,7 +38,6 @@ html {
     flex-shrink: 1;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: transparent;
   }
   .text21 {
     color: rgba(0, 0, 0, 1);
@@ -52,9 +49,6 @@ html {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
   }
   .text22 {
     color: rgba(0, 0, 0, 1);
@@ -66,11 +60,7 @@ html {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
   }
-
   #login-error-msg-holder {
     width: 100%;
     height: 100%;
@@ -78,7 +68,6 @@ html {
     justify-items: center;
     align-items: center;
   }
-  
   #login-error-msg {
     width: 23%;
     text-align: center;
@@ -90,11 +79,9 @@ html {
     border: 1px solid #8a0000;
     background-color: #e58f8f;
   }
-  
   #error-msg-second-line {
     display: block;
   }
-  
   #login-form {
     top: 50%;
     position: relative;
@@ -103,20 +90,16 @@ html {
     justify-items: center;
     align-items: center;
   }
-  
   .login-form-field::placeholder {
     color: #3a3a3a;
   }
-  
   .login-form-field {
     border: none;
     border-bottom: 1px solid #3a3a3a;
     margin-bottom: 10px;
     border-radius: 3px;
-    outline: none;
     padding: 0px 0px 5px 5px;
   }
-  
   #login-form-submit {
     width: 10%;
     padding: 7px;
@@ -126,9 +109,7 @@ html {
     font-weight: bold;
     background-color:  rgba(10, 117, 151, 1);
     cursor: pointer;
-    outline: none;
   }
-
   #login-form-submit:hover {
     box-shadow: 0px 0px 3px 1px black;
 }

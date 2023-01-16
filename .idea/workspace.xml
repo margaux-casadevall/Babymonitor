@@ -8,14 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7a232a4-afd9-4adc-938b-66ffccf9ecd0" name="Changes" comment="model tests passed">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/httpobjects_apache_httpclient_4_x.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/IndexServletTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LogoutServletTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/IndexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/IndexServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DataServletTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestingDataServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestingDataServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/login_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.8080/work/Tomcat/localhost/ROOT/org/apache/jsp/login_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GlucoseLevelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GlucoseLevelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,22 +71,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="JUnit.CommentTest">
     <configuration name="CommentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebApp" />
       <option name="PACKAGE_NAME" value="" />
@@ -100,39 +91,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebApp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IndexServletTest" />
+      <option name="MAIN_CLASS_NAME" value="TestComment" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexServletTest.doPost_PrintThreshold" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestComment.testGetValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebApp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IndexServletTest" />
-      <option name="METHOD_NAME" value="doPost_PrintThreshold" />
+      <option name="MAIN_CLASS_NAME" value="TestComment" />
+      <option name="METHOD_NAME" value="testGetValue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogoutServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGlucoseLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebApp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LogoutServletTest" />
+      <option name="MAIN_CLASS_NAME" value="TestGlucoseLevel" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestingDataServlet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGlucoseLevel.testGetValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebApp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestingDataServlet" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="TestGlucoseLevel" />
+      <option name="METHOD_NAME" value="testGetValue" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IndexServletTest" />
-        <item itemvalue="JUnit.IndexServletTest.doPost_PrintThreshold" />
-        <item itemvalue="JUnit.TestingDataServlet" />
-        <item itemvalue="JUnit.LogoutServletTest" />
         <item itemvalue="JUnit.CommentTest" />
+        <item itemvalue="JUnit.TestComment" />
+        <item itemvalue="JUnit.TestComment.testGetValue" />
+        <item itemvalue="JUnit.TestGlucoseLevel" />
+        <item itemvalue="JUnit.TestGlucoseLevel.testGetValue" />
       </list>
     </recent_temporary>
   </component>
@@ -263,14 +255,7 @@
       <option name="project" value="LOCAL" />
       <updated>1673803913283</updated>
     </task>
-    <task id="LOCAL-00012" summary="model tests passed">
-      <created>1673825170362</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1673825170362</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,9 +274,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding data" />
-    <MESSAGE value="Push push" />
     <MESSAGE value="model tests passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="model tests passed" />
+    <MESSAGE value="Push push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Push push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -319,15 +304,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/CommentTest.java</url>
           <line>10</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/IndexServletTest.java</url>
-          <line>53</line>
-          <properties class="IndexServletTest" method="doPost_PrintThreshold">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -63,12 +63,10 @@
     <main id="main-holder-1">
         <span class="text21"><span>THRESHOLD LIMITS</span></span>
         <form id="form" action="/patient/thresholds?id=<%=patient.getId()%>" method="post">
-            <div class="upper">
                 <input type="text" value="<%=patient.getUpperThreshold()%>" name="upper" id="upper-field" class="upper-form-field" placeholder="Upper threshold (14)">
                 <input type="text" value="<%=patient.getLowerThreshold()%>" name="lower" id="lower-field" class="lower-form-field" placeholder="Lower threshold (4.5)">
                 <span class="text11"><span>mmol</span></span>
-            </div>
-
+                <span class="text12"><span>mmol</span></span>
             <button class="savebutton" type="submit">
                 <span class="text17"><span>Save changes</span></span>
             </button>
