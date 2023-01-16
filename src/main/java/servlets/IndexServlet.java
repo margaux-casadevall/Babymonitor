@@ -26,7 +26,7 @@ public class IndexServlet extends HttpServlet
       response.sendRedirect("/patients");
     }
   }
-  protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+  public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     var LowerThresh = request.getParameter("Lower threshold (4.5)");
     var UpperThresh = request.getParameter("Upper threshold (14)");
