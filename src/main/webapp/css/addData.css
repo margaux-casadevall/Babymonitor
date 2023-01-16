@@ -2,7 +2,6 @@ html {
     height: 100%;
     width:100%;
   }
-  
   body {
     height: 100%;
     width:100%;
@@ -13,7 +12,6 @@ html {
     align-items: relative;
     background-color: white;
   }
-  
   .footer img{
     bottom: 3%;
     left: 3%;
@@ -26,17 +24,9 @@ html {
     box-sizing: border-box;
     align-items: flex-start;
     flex-shrink: 1;
-    border-color: transparent;
-    border-style: none;
-    border-width: 0;
-    margin-right: 0;
-    border-radius: 0px 0px 0px 0px;
-    margin-bottom: 0;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: transparent;
   }
-
   .footer h1{
     position: absolute;
     bottom: 6%;
@@ -63,12 +53,7 @@ html {
     box-sizing: border-box;
     align-items: flex-start;
     flex-shrink: 1;
-    border-color: transparent;
-    border-style: none;
-    border-width: 0;
-    margin-right: 0;
     border-radius: 7px;
-    margin-bottom: 0;
     flex-direction: row;
     justify-content: flex-start;
     background-color: rgba(10, 117, 151, 1);
@@ -90,9 +75,6 @@ html {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
   }
   .text07 {
     top: 50%;
@@ -107,9 +89,6 @@ html {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
   }
   #main-holder-1 {
     width: 70%;
@@ -123,10 +102,10 @@ html {
     box-shadow: 0px 0px 5px 2px black;
   }
   .save {
-    bottom: -20%;
+    bottom: -40%;
     right: 2%;
     width: 10%;
-    height: 10%;
+    height: 20%;
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -153,9 +132,6 @@ html {
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
-  margin-right: 0;
-  margin-bottom: 0;
-  text-decoration: none;
 }
   .text17 {
     color: rgba(0, 0, 0, 1);
@@ -170,9 +146,6 @@ html {
     font-weight: 500;
     line-height: normal;
     font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
   }
   .text21 {
     color: rgba(0, 0, 0, 1);
@@ -187,11 +160,7 @@ html {
     font-weight: 700;
     line-height: normal;
     font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
   }
-
   #form {
     top: 20%;
     height: 50%;
@@ -201,7 +170,6 @@ html {
     justify-items: center;
     align-items: center;
   }
-
 .measurement-form-field {
   top: 0%;
   left: 5%;
