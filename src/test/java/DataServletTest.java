@@ -15,9 +15,9 @@ import java.io.IOException;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
-public class TestingDataServlet {
+public class DataServletTest{
     @Test
-    public void TestingDataServlet() throws Exception {
+    public void DataServletTest() throws Exception {
         HttpClient client = HttpClientBuilder.create().build();
         HttpGet request = new HttpGet("http://localhost:8080/patient/data"); //request has succeeded
         HttpResponse response = client.execute(request);

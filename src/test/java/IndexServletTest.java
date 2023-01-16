@@ -24,6 +24,8 @@ public class IndexServletTest {
         int statusCode = response.getStatusLine().getStatusCode();
         assertEquals(200, statusCode);
 }
+
+
     @Test
     public void doGet_redirectsToLogin() throws Exception {
         HttpServletRequest request = mock(HttpServletRequest.class);
@@ -65,7 +67,6 @@ public class IndexServletTest {
         PrintWriter writer = new PrintWriter(stringWriter);
         when(response.getWriter()).thenReturn(writer);
 
-        // Act
         new IndexServlet().doPost(request, response);
 
         // Assert
